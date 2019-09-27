@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="anim">
+    <file>anim_processing.gif</file>
+  </qresource>
+</RCC>

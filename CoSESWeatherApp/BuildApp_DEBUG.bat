@@ -1,0 +1,2 @@
+pyinstaller CoSESWeatherApp_DEBUG.spec
+pause

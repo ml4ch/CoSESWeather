@@ -1,0 +1,1 @@
+pyrcc4 -o key_rc.py key.qrc

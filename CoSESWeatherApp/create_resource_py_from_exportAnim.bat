@@ -1,0 +1,1 @@
+pyrcc4 -o anim_rc.py anim.qrc

@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="tum_logo">
+    <file>tum_logo.png</file>
+  </qresource>
+</RCC>

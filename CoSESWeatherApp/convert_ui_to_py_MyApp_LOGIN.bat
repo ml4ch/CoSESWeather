@@ -1,0 +1,2 @@
+pyuic4 CoSESWeatherApp_LOGIN_ui.ui > CoSESWeatherApp_LOGIN_ui.py
+pause

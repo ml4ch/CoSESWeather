@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="header">
+    <file>header.png</file>
+  </qresource>
+</RCC>

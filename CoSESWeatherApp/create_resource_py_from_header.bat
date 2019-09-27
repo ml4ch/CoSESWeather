@@ -1,0 +1,1 @@
+pyrcc4 -o header_rc.py header.qrc

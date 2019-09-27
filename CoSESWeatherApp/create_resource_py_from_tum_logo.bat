@@ -1,0 +1,1 @@
+pyrcc4 -o tum_logo_rc.py tum_logo.qrc
