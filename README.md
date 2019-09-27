@@ -1,10 +1,40 @@
 ## Welcome to CoSESWeather
 
-Weather-Data Acquisition System for a microgrid-controller
+In this project a Weather-Data Acquisition and Management System has been developed. In this system a Arduino-based microcontorller (client) interfaces different kinds of sensors and forms the core entity of the weather-station developed throughout this project. 
+Acquired data is then forwarded to a RaspberryPi-based device (server), where data is processed and permanently stored in MySQL databases.
+A GUI-Application (CoSESWeatherApp) has been developed to enable users to conveniently interact with the system (waether-data export, account management, system commands etc.).
 
-### Markdown
+![CoSESWeather Logo](https://github.com/ml4ch/CoSESWeather/blob/master/CoSESWeatherApp/logo.png?raw=true)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Development environment and file-structure
+
+This section gives a brief overview on the required modules and libraries as well as the utilized file-structure of this repository.
+
+```markdown
+# Required modules (Python)
+
+- Python 2.7 (Python language and interpreter)
+- PyQt4 and QtWebKit (GUI development)
+```
+
+
+```markdown
+# Required libaries (Arduino)
+
+```
+
+```markdown
+# Required software (server)
+
+- PHP (required by various utilized packages)
+- MySQL (database management system)
+- phpMyAdmin (web-based user interface to databases)
+- Apache2 (HTTP web-server)
+- sSMTP and Mailutils (Mail handling tools)
+```
+
+
+
 
 ```markdown
 Syntax highlighted code block
