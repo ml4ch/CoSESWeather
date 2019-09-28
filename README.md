@@ -9,7 +9,6 @@ A GUI-Application (CoSESWeatherApp) has been developed to enable users to conven
   <img src="https://github.com/ml4ch/CoSESWeather/blob/master/CoSESWeatherApp/logo.png?raw=true">
 </p>
 
-<br>
 
 ### Important links
 
