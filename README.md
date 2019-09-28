@@ -11,7 +11,7 @@ A GUI-Application (CoSESWeatherApp) has been developed to enable users to conven
 
 ## Required development environment
 
-This section gives a brief overview on the required third-party modules and libraries.
+This section gives a brief overview on the required third-party modules and libraries utilized in this project.
 
 
 ### Required modules (Python on server-side)
