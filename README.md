@@ -69,7 +69,7 @@ The commands needed in order to install required packages are listed below. Admi
 
  - **Apache2** (HTTP web-server)
 ```markdown
- sudo apt install apache2
+sudo apt install apache2
 ```
  - **MySQL** (database management system)
  ```markdown
@@ -91,7 +91,7 @@ sudo apt install phpmyadmin
 
 ## WeeWx weather-station framework
 
-The popular open-source weather-station framework **WeeWx** is used in this project. For detailed information on functionality and customization the documentation on the WeeWx-website is to be considered.
+The popular open-source weather-station framework **WeeWx** is used in this project. For detailed information on functionality and customization the extensive documentation on the WeeWx-website is to be considered.
 
 
 **Website**: [WeeWx Framework](http://weewx.com/)
