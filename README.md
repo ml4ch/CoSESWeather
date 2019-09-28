@@ -39,7 +39,7 @@ The utilized structure of this project-repository is listed below. As the list s
   - **weewx-3.9.1(CoSESWeather_mod).tar.gz**: WeeWx weather-station framework (modified installation package)
 
 
-## Required development environment
+## Development environment
 
 This section gives a brief overview on the required third-party modules and libraries utilized in this project.
 
@@ -47,8 +47,8 @@ This section gives a brief overview on the required third-party modules and libr
 ### Required modules (Python on server-side)
 
 - **Python 2.7** (Python language and interpreter): [Python 2.7](https://www.python.org/download/releases/2.7/)
-- **PyQt4 and QtWebKit** (GUI development): [PyQt4: GUI toolkit](https://pypi.org/project/PyQt4/)
-- **requests** (Sending HTTP/1.1 requests): [Requests: HTTP for Humans](https://pypi.org/project/requests/)
+- **PyQt4 and QtWebKit** (GUI development): [PyQt4 GUI toolkit](https://pypi.org/project/PyQt4/)
+- **requests** (Sending HTTP/1.1 requests): [HTTP for Humans](https://pypi.org/project/requests/)
 - **configparser** (Configuration-file management): [ConfigParser](https://pypi.org/project/configparser/)
 - **xlsxwriter** (Excel-file creation): [XlsxWriter](https://pypi.org/project/XlsxWriter/)
 - **PyInstaller** (Bundles project): [PyInstaller](https://pypi.org/project/PyInstaller/)
@@ -87,3 +87,11 @@ sudo apt install phpmyadmin
  ```markdown
  sudo apt install php-mysql
 ```
+
+
+## WeeWx weather-station framework
+
+The popular open-source weather-station framework **WeeWx** is used in this project. For detailed information on functionality and customization the documentation on the WeeWx-website is to be considered.
+
+
+**Website**: [WeeWx Framework](http://weewx.com/)
