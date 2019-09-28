@@ -9,32 +9,9 @@ A GUI-Application (CoSESWeatherApp) has been developed to enable users to conven
 </p>
 
 
-## Required development environment
-
-This section gives a brief overview on the required third-party modules and libraries utilized in this project.
-
-
-### Required modules (Python on server-side)
-
-- **Python 2.7** (Python language and interpreter): [Python 2.7](https://www.python.org/download/releases/2.7/)
-- **PyQt4 and QtWebKit** (GUI development): [PyQt4: GUI toolkit](https://pypi.org/project/PyQt4/)
-- **requests** (Sending HTTP/1.1 requests): [Requests: HTTP for Humans](https://pypi.org/project/requests/)
-- **configparser** (Configuration-file management): [ConfigParser](https://pypi.org/project/configparser/)
-- **xlsxwriter** (Excel-file creation): [XlsxWriter](https://pypi.org/project/XlsxWriter/)
-- **PyInstaller** (Bundles project): [PyInstaller](https://pypi.org/project/PyInstaller/)
-
-
-### Required libaries (Arduino, C, C++ on client side)
-
-- **Arduino** (IDE and standard modules): [Arduino IDE](https://www.arduino.cc/en/Main/Software)
-- **Controllino** (Microcontroller library): [Controllino Lib](https://github.com/CONTROLLINO-PLC/CONTROLLINO_Library)
-- **MAX31865** (PT100 amplifier library): [MAX31865 Lib](https://github.com/adafruit/Adafruit_MAX31865)
-- **PT100** (PT100 look-up table): [PT100 LookUp](https://github.com/drhaney/pt100rtd)
-
-
 ## File-structure of repository
 
-The utilized structure of this project-repository is listed below. As the list shows, this project is split into four sub-directories. Important files are also listed and briefly discussed below.
+The utilized structure of this project-repository is listed below. As the list shows, this project is split into four sub-directories. Important files are also listed and briefly discussed respectively.
 
 - [**Client**](https://github.com/ml4ch/CoSESWeather/tree/master/Client): Source-code for the microcontroller
   - **CoSESClient.ino**: To be flashed onto the microcontroller
@@ -60,5 +37,50 @@ The utilized structure of this project-repository is listed below. As the list s
 
 - [**WeeWx**](https://github.com/ml4ch/CoSESWeather/tree/master/WeeWx): Modified WeeWx-framework installation
   - **weewx-3.9.1(CoSESWeather_mod).tar.gz**: WeeWx weather-station framework (modified installation package)
- 
 
+
+## Required development environment
+
+This section gives a brief overview on the required third-party modules and libraries utilized in this project.
+
+
+### Required modules (Python on server-side)
+
+- **Python 2.7** (Python language and interpreter): [Python 2.7](https://www.python.org/download/releases/2.7/)
+- **PyQt4 and QtWebKit** (GUI development): [PyQt4: GUI toolkit](https://pypi.org/project/PyQt4/)
+- **requests** (Sending HTTP/1.1 requests): [Requests: HTTP for Humans](https://pypi.org/project/requests/)
+- **configparser** (Configuration-file management): [ConfigParser](https://pypi.org/project/configparser/)
+- **xlsxwriter** (Excel-file creation): [XlsxWriter](https://pypi.org/project/XlsxWriter/)
+- **PyInstaller** (Bundles project): [PyInstaller](https://pypi.org/project/PyInstaller/)
+
+
+### Required libaries (Arduino, C, C++ on client side)
+
+- **Arduino** (IDE and standard modules): [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+- **Controllino** (Microcontroller library): [Controllino Lib](https://github.com/CONTROLLINO-PLC/CONTROLLINO_Library)
+- **MAX31865** (PT100 amplifier library): [MAX31865 Lib](https://github.com/adafruit/Adafruit_MAX31865)
+- **PT100** (PT100 look-up table): [PT100 LookUp](https://github.com/drhaney/pt100rtd)
+ 
+ 
+ ### Required installation on the server
+ 
+ - Apache2 (HTTP web-server)
+```markdown
+ sudo apt install apache2
+```
+ - MySQL (database management system)
+ ```markdown
+sudo apt install mariadb-server
+```
+ - phpMyAdmin (web-based tool for database management)
+ ```markdown
+sudo apt install phpmyadmin
+```
+ - PHP (programming language required by phpMyAdmin and Apache)
+ ```markdown
+ sudo apt install php libapache2-mod-php 
+```
+ - Connector between PHP and MySQL
+ ```markdown
+ sudo apt install php-mysql
+```
