@@ -88,7 +88,7 @@ sudo apt install phpmyadmin
 ```
  - **PHP** (programming language required by phpMyAdmin and Apache)
  ```console
- sudo apt install php libapache2-mod-php 
+ sudo apt install php php-mbstring libapache2-mod-php 
 ```
  - **MySQL** connector for **PHP**
  ```console
