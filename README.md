@@ -64,7 +64,7 @@ This section gives a brief overview on the required third-party modules and libr
  
  ## Required installation on server
 
-The commands required in order to install required packages are listed below. Administrative privileges are required for installation.
+The commands needed in order to install required packages are listed below. Administrative privileges on the target devicve are required for installation.
 
 
  - **Apache2** (HTTP web-server)
