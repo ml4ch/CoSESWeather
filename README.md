@@ -62,25 +62,28 @@ This section gives a brief overview on the required third-party modules and libr
 - **PT100** (PT100 look-up table): [PT100 LookUp](https://github.com/drhaney/pt100rtd)
  
  
- ### Required installation on the server
- 
- - Apache2 (HTTP web-server)
+ ## Required installation on server
+
+The commands required in order to install required packages are listed below. Administrative privileges are required for installation.
+
+
+ - **Apache2** (HTTP web-server)
 ```markdown
  sudo apt install apache2
 ```
- - MySQL (database management system)
+ - **MySQL** (database management system)
  ```markdown
 sudo apt install mariadb-server
 ```
- - phpMyAdmin (web-based tool for database management)
+ - **phpMyAdmin** (web-based tool for database management)
  ```markdown
 sudo apt install phpmyadmin
 ```
- - PHP (programming language required by phpMyAdmin and Apache)
+ - **PHP** (programming language required by phpMyAdmin and Apache)
  ```markdown
  sudo apt install php libapache2-mod-php 
 ```
- - Connector between PHP and MySQL
+ - Connector between **PHP** and **MySQL**
  ```markdown
  sudo apt install php-mysql
 ```
