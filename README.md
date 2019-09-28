@@ -9,8 +9,12 @@ A GUI-Application (CoSESWeatherApp) has been developed to enable users to conven
   <img src="https://github.com/ml4ch/CoSESWeather/blob/master/CoSESWeatherApp/logo.png?raw=true">
 </p>
 
+<br>
 
-**CoSES Weather-Station**: View current weather and weather-trends in Garching: [CoSES: Weather-Station Website](https://miroslav-lach-8364.dataplicity.io/weewx/)
+### Important links
+
+- **CoSES Weather-Station**: View current weather and weather-trends in Garching: [CoSES: Weather-Station Website](https://miroslav-lach-8364.dataplicity.io/weewx/)
+- **Download the App**: Download the latest version of the CoSESWeatherApp: [Download](https://github.com/ml4ch/CoSESWeather/releases/download/v1.0/CoSESWeatherApp.exe)
 
 <br>
 
