@@ -56,6 +56,7 @@ The utilized structure of this project-repository is listed below. As the list s
   - **CoSESServerManager.sh**: Helper-script (monitoring and restarting of system-processes)
   - **MySQLBackUp.sh**: Helper-script (backup creation of MySQL databases)
   - **WatchDogResetter.sh**: Reset of watchdog-timer (on server-side)
+  - **localhost.sql**: Initial database-structure (can be imported to create required database-tables)
 
 - [**WeeWx**](https://github.com/ml4ch/CoSESWeather/tree/master/WeeWx): Modified WeeWx-framework installation
   - **weewx-3.9.1(CoSESWeather_mod).tar.gz**: WeeWx weather-station framework (modified installation package)
