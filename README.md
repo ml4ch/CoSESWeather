@@ -90,7 +90,7 @@ sudo apt install phpmyadmin
  ```console
  sudo apt install php libapache2-mod-php 
 ```
- - Connector between **PHP** and **MySQL**
+ - **MySQL** connector for **PHP**
  ```console
  sudo apt install php-mysql
 ```
