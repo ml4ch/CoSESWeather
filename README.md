@@ -4,10 +4,15 @@ In this project a Weather-Data Acquisition and Management System has been develo
 Acquired data is then forwarded to a RaspberryPi-based device (server) where data is processed and permanently stored in MySQL databases.
 A GUI-Application (CoSESWeatherApp) has been developed to enable users to conveniently interact with the system (weather-data export, account management, system commands etc.).
 
+
 <p align="center">
   <img src="https://github.com/ml4ch/CoSESWeather/blob/master/CoSESWeatherApp/logo.png?raw=true">
 </p>
 
+
+**CoSES Weather-Station**: View current weather and weather-trends in Garching: [CoSES: Weather-Station Website](https://miroslav-lach-8364.dataplicity.io/weewx/)
+
+<br>
 
 ## File-structure of repository
 
@@ -38,6 +43,7 @@ The utilized structure of this project-repository is listed below. As the list s
 - [**WeeWx**](https://github.com/ml4ch/CoSESWeather/tree/master/WeeWx): Modified WeeWx-framework installation
   - **weewx-3.9.1(CoSESWeather_mod).tar.gz**: WeeWx weather-station framework (modified installation package)
 
+<br>
 
 ## Development environment
 
@@ -61,6 +67,7 @@ This section gives a brief overview on the required third-party modules and libr
 - **MAX31865** (PT100 amplifier library): [MAX31865 Lib](https://github.com/adafruit/Adafruit_MAX31865)
 - **PT100** (PT100 look-up table): [PT100 LookUp](https://github.com/drhaney/pt100rtd)
  
+<br> 
  
  ## Required installation on server
 
@@ -68,26 +75,27 @@ The commands needed in order to install required packages are listed below. Admi
 
 
  - **Apache2** (HTTP web-server)
-```markdown
+```console
 sudo apt install apache2
 ```
  - **MySQL** (database management system)
- ```markdown
+ ```console
 sudo apt install mariadb-server
 ```
  - **phpMyAdmin** (web-based tool for database management)
- ```markdown
+ ```console
 sudo apt install phpmyadmin
 ```
  - **PHP** (programming language required by phpMyAdmin and Apache)
- ```markdown
+ ```console
  sudo apt install php libapache2-mod-php 
 ```
  - Connector between **PHP** and **MySQL**
- ```markdown
+ ```console
  sudo apt install php-mysql
 ```
 
+<br>
 
 ## WeeWx weather-station framework
 
