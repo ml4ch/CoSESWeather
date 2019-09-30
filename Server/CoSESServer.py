@@ -76,7 +76,7 @@ def UpdateNotificationFileThread(inst):
     """
     while True:
         inst.update_notification_file()
-        time.sleep(43200)  # run every 12 hours
+        time.sleep(21600)  # run every 6 hours
         inst.delete_status_file()
 
 
@@ -160,7 +160,7 @@ def RevPiServerThread(inst):
                         message = '[CoSESServer] Client connected to server: ' + str(addr)
                         inst.isServerRestarting = False
                         inst.log_event(message)
-                        inst.delete_status_file()
+                        # inst.delete_status_file()
                         time.sleep(2)  # Give the client some time to fully initialize the connection
                         inst.isConnected = True
                         inst.t_lastHeartBeat = time.time()
