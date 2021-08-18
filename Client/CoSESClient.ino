@@ -12,8 +12,8 @@
  *  that together with the CONTROLLINO forms the core of the CoSES Weather Station.
  *
  *  @Author:      Miroslav Lach (MSE, Technical University Munich)
- *  @Version:     1.0
- *  @Date:        13.01.2019
+ *  @Version:     1.1
+ *  @Date:        18.08.2021
  *  @Status:      Released, no known bugs
  *  @Link:        https://github.com/ml4ch/CoSESWeather
  */
@@ -282,7 +282,8 @@ void loop()
     {
       isConnected = false; 
       DEBUG_PRINT_LN("-------------- Lost connection to Server -----------------");
-      initiateRestart();
+      // Connect to RevPi
+      //initiateRestart();
     }
    
     // if connected, send data to RevPi
@@ -444,9 +445,12 @@ void loop()
         // ----------------------------------------------------------------------------
         // --------- SPN1 Pyranometer (receive requested data) ------------------------
         SPN1data = "_ERR_SPN1_";
+        DEBUG_PRINT_LN(SPN1data);
         if (SPN1_SERIAL.available() > 0) // If received data from SPN1 (buffer not empty)
         {
+          DEBUG_PRINT_LN("serial available");
           SPN1data = SPN1_SERIAL.readString(); // read SPN1 response for the command that has been sent earlier
+          DEBUG_PRINT_LN("have read string");
           //extract needed data
           SPN1data.remove(0, 2);
           SPN1data.replace(" ", "");      
@@ -462,6 +466,7 @@ void loop()
         {
           // Create Sensor Data Package      
           SensorDataPackage = String(windspeed) + "|" + String(PT100_temp) + "|" + String(SPN1data) + "|" + String(CMP3_DataArray[0]) + "|" + String(CMP3_DataArray[1]) + "|" + String(CMP3_DataArray[2]);
+          DEBUG_PRINT_LN(SensorDataPackage);
           client_eth.println(SensorDataPackage + "\n"); // Send sensor data package to RevPi
         }
         // ----------------------------------------------------------------------------
@@ -472,6 +477,21 @@ void loop()
     }    
   }
   wdt_reset(); // reset watchdog timer
+  // Retry Ethernet Connection
+  if (!client_eth.connected())
+  {
+    if (client_eth.connect(RevPi_IP, REVPI_PORT_SOCKET))
+    {
+      DEBUG_PRINT("Established connection to RevPi at ");
+      DEBUG_PRINT_LN(client_eth.remoteIP());
+      isConnected = true;
+    }
+    else
+    {
+      DEBUG_PRINT_LN("Could not connect to the RevPi! Retrying in 5 seconds ...");
+      delay(5000);
+    }
+  }
 }
 
 // Function will trigger a Controllino board restart (Software Reset using the watchdog)
