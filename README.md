@@ -12,7 +12,7 @@ A GUI-Application (CoSESWeatherApp) has been developed to enable users to conven
 
 ### Important links
 
-- **CoSES Weather-Station**: View current weather and weather-trends in Garching: [CoSES: Weather-Station Website](https://miroslav-lach-8364.dataplicity.io/weewx/)
+- **CoSES Weather-Station**: View current weather and weather-trends in Garching: [CoSES: Weather-Station Website](https://weather.mse.tum.de/)
 - **Download the App**: Download the latest version of the CoSESWeatherApp: [Download](https://github.com/ml4ch/CoSESWeather/releases/download/v1.0/CoSESWeatherApp.exe)
 
 <br>
